@@ -41,7 +41,10 @@ For Each ws In Worksheets
             'create ticker list
             ticker_name = Cells(i, 1).Value
         
-            'yearly change (find the pricing at start of yr and minus from end of year)
+            'yearly change (please note: i know that my code for calculating open price is incorrect _
+            i have tried for over a week to figure it out. i had tutors and bcs sessions, i know that i need to _
+            to capture the first day of trading for each ticker, but i cannot figure it out)
+            
             open_price = Cells(frow, 3).Value
             close_price = Cells(lrow, 6).Value
             
